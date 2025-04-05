@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Туристичний довідник Дрогобича</title>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+  <!-- 
+    - #HEADER
+  -->
+  <header class="header" data-header>
+    <div class="overlay" data-overlay></div>
+    <div class="header-top">
+      <div class="container">
+        <a href="tel:(0324) 410-160" class="helpline-box">
+          <div class="icon-box">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+          <div class="wrapper">
+            <p class="helpline-title">Для додаткової інформації :</p>
+            <p class="helpline-number">(0324) 410-160</p>
+          </div>
+        </a>
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.svg" alt="Tourly logo">
+        </a>
+        <div class="header-btn-group">
+          <form class="search-form" id="searchForm">
+            <input type="text" id="searchQuery" placeholder="Пошук..." required>
+            <button class="search-btn" type="submit" aria-label="Search">
+              <ion-icon name="search"></ion-icon>
+            </button>
+          </form>
+          <div id="searchResults"></div> <!-- Тут будуть відображатись результати пошуку -->
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <ul class="social-list">
+          <li>
+            <a href="https://www.facebook.com/DrogRada/?locale=uk_UA" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.youtube.com/channel/UCbwirQ4_FtpkH7-lPqe85YA" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+        </ul>
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo">
+              <img src="./assets/images/logo-blue.svg" alt="Tourly logo">
+            </a>
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>Головна</a>
+            </li>
+            <li>
+              <a href="monuments.html" class="navbar-link" data-nav-link>Пам'ятники</a>
+            </li>
+            <ul class="menu">
+              <li class="menu-item">
+                <a href="" class="menu-link">Освітні установи</a>
+                <ul class="submenu">
+                  <li><a href="Kindergartens.html">Дитячі садки</a></li>
+                  <li><a href="schools.html">Школи</a></li>
+                  <li><a href="Colleges_schools.html">Коледжі, училища</a></li>
+                  <li><a href="institutes.html">Університети</a></li>
+                </ul>
+              </li>
+            </ul>
+            <li>
+              <a href="Shopping_enters.html" class="navbar-link" data-nav-link>Торгові центри</a>
+            </li>
+            <li>
+              <a href="toeat.html" class="navbar-link" data-nav-link>Де поїсти?</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="vhid.html">
+          <button class="btn btn-primary">Увійти</button>
+        </a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <article>
+      <!-- 
+        - #HERO
+      -->
+      <section class="hero" id="home">
+        <div class="container">
+          <h2 class="h1 hero-title">Туристичний довідник Дрогобича </h2>
+          <p class="hero-text">
+            Дізнайся більше про місто Дрогобич – його історію, культуру та основні пам'ятки.
+          </p>
+          <div class="btn-group">
+            <button class="btn btn-primary">Увійти</button>
+            <button class="btn btn-secondary">Зареєструватися</button>
+          </div>
+        </div>
+      </section>
+      <!-- 
+        - #TOUR SEARCH
+      -->
+      <section class="tour-search">
+        <div class="container">
+          <form action="" class="tour-search-form">
+            <div class="input-wrapper">
+              <label for="destination" class="input-label">Місце призначення*</label>
+              <input type="text" name="destination" id="destination" required placeholder="Enter Destination"
+                class="input-field">
+            </div>
+            <div class="input-wrapper">
+              <label for="people" class="input-label">Кількість пасажирів*</label>
+              <input type="number" name="people" id="people" required placeholder="No.of People" class="input-field">
+            </div>
+            <div class="input-wrapper">
+              <label for="checkin" class="input-label">Дата заїзду**</label>
+              <input type="date" name="checkin" id="checkin" required class="input-field">
+            </div>
+            <div class="input-wrapper">
+              <label for="checkout" class="input-label">Дата виїзду*</label>
+              <input type="date" name="checkout" id="checkout" required class="input-field">
+            </div>
+            <button type="submit" class="btn btn-secondary">Записатися зараз</button>
+          </form>
+        </div>
+      </section>
+      <!-- 
+        - #POPULAR
+      -->
+      <section class="popular" id="destination">
+        <div class="container">
+          <p class="section-subtitle">Відкрийте нові місця для себе</p>
+          <h2 class="h2 section-title">Топ історичних локацій у Дрогобичі</h2>
+          <p class="section-text">
+            Прогулюєтесь Дрогобичем і не знаєте, яку локацію відвідати? Топ місць у Дрогобичі, які буде цікаво відвідати
+            туристам,
+            а також ще раз оцінити їх місцевим жителям. У добірку увійшли як історичні, так і популярні локації для
+            фото.
+          </p>
+          <ul class="popular-list">
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img src="./assets/images/Логолавка.jpg" alt="Логолавка" loading="lazy">
+                </figure>
+                <div class="card-content">
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                  <p class="card-subtitle">
+                    <a href="#">Дрогобич- вулиця Жупна,5.</a>
+                  </p>
+                  <h3 class="h3 card-title">
+                    <a href="#">Логолавка</a>
+                  </h3>
+                  <p class="card-text">
+                    <span class="more-text"> У 2019 році на площі Замкова гора у Дрогобичі встановили логолавку, а біля
+                      неї - напис «Мамо, я у Дрогобичі».Ця локація одразу стала улюбленим місцем для фото для багатьох
+                      дрогобичан та гостей міста.</span>
+                    <a href="#" class="toggle-text" onclick="toggleText(event)">Читати далі</a>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img src="./assets/images/Ейфелева вежа.jpg" alt="Ейфелева вежа" loading="lazy">
+                </figure>
+                <div class="card-content">
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                  <p class="card-subtitle">
+                    <a href="#">Дрогобич- вулиця Гончарська, 5.</a>
+                  </p>
+                  <h3 class="h3 card-title">
+                    <a href="#">Ейфелева вежа</a>
+                  </h3>
+                  <p class="card-text">
+                    <span class="more-text"> А ви знали, що у Дрогобичі є своя Ейфелева вежа? Щоправда, у мініформаті.
+                      Інсталяція розташована неподалік від площі Замкова гора та збирає прихильність дрогобичан і гостей
+                      міста, які полюбляють оригінальні фото. Знайти вежу можна навпроти туристичної агенції Relax
+                      Tour.</span>
+                    <a href="#" class="toggle-text" onclick="toggleText(event)">Читати далі</a>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img src="./assets/images/Вежа ратуші.jpg" alt="Вежа ратуші" loading="lazy">
+                </figure>
+                <div class="card-content">
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                  <p class="card-subtitle">
+                    <a href="#">Дрогобич-площа Ринок</a>
+                  </p>
+                  <h3 class="h3 card-title">
+                    <a href="#">Вежа ратуші</a>
+                  </h3>
+                  <p class="card-text">
+                    <span class="more-text">Дрогобицька ратуша - одна з візитівок нашого міста. А на вежу ратуші
+                      підіймаються чи не всі туристи, щоб помилуватись Дрогобичем зверху. Ну і звісно зробити фото. Як
+                      не зробити фото на тлі старовинного Дрогобича?</span>
+                    <a href="#" class="toggle-text" onclick="toggleText(event)">Читати далі</a>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img src="./assets/images/Арт-об’єкт “При потребі розбити скло.jpg"
+                    alt="Арт-об’єкт При потребі розбити скло" loading="lazy">
+                </figure>
+                <div class="card-content">
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                  <p class="card-subtitle">
+                    <a href="#">Дрогобич- площа Ринок</a>
+                  </p>
+                  <h3 class="h3 card-title">
+                    <a href="#">Арт-об’єкт “При потребі розбити скло”</a>
+                  </h3>
+                  <p class="card-text">
+                    <span class="more-text"> Вся сіль у Дрогобичі, та навіть під ним - на Площі Ринок на рівні бруківки
+                      під склом встановили топки солі.
+                      “При потребі розбити скло” - така назва об'єкта символізує стратегічні запаси солі, у разі
+                      закінчення видобутку на солевиварювальному заводі.
+                      Це місце також полюбилось туристам, як оригінальна локація для фото.</span>
+                    <a href="#" class="toggle-text" onclick="toggleText(event)">Читати далі</a>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img src="./assets/images/Лавка Мрій Блакитноокого.jpg" alt="Лавка Мрій Блакитноокого" loading="lazy">
+                </figure>
+                <div class="card-content">
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                  <p class="card-subtitle">
+                    <a href="#">Дрогобич</a>
+                  </p>
+                  <h3 class="h3 card-title">
+                    <a href="#">Лавка Мрій Блакитноокого</a>
+                  </h3>
+                  <p class="card-text">
+                    <span class="more-text"> В листопаді 2022 року у парку Дрогобицького державного педагогічного
+                      університету імені Івана Франка відкрили лавку пам’яті Бруно Шульца. Інсталяція має назву Лавка
+                      Мрій Блакитноокого. Вона розташована навпроти центрального корпусу університету, де свого часу і
+                      навчався Бруно Шульц.</span>
+                    <a href="#" class="toggle-text" onclick="toggleText(event)">Читати далі</a>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img src="./assets/images/Вілла Яна Нев'ядомського.jpg" alt="Вілла Яна Нев'ядомського" loading="lazy">
+                </figure>
+                <div class="card-content">
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                  <p class="card-subtitle">
+                    <a href="#">Дрогобич-вулиця Жупна, 4.</a>
+                  </p>
+                  <h3 class="h3 card-title">
+                    <a href="#">Вілла Яна Нев’ядомського</a>
+                  </h3>
+                  <p class="card-text">
+                    <span class="more-text"> Вілла Яна Нев’ядомського — пам’ятка архітектури місцевого значення,
+                      збудована в 1903 році. Це будівля з поєднанням різних архітектурних форм і багатим декором.
+                      Власник будинку, Ян Нев’ядомський, був пекарем, банкіром, політиком та бургомістром Дрогобича. Він
+                      був одним з перших власників телефону в місті, а в будинку досі зберігається ретро-телефон 1926
+                      року, який працює й сьогодні.</span>
+                    <a href="#" class="toggle-text" onclick="toggleText(event)">Читати далі</a>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img src="./assets/images/Гімназія імені Франца-Йосифа.jpg" alt="Гімназія імені Франца-Йосифа"
+                    loading="lazy">
+                </figure>
+                <div class="card-content">
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                  <p class="card-subtitle">
+                    <a href="#">Дрогобич-вулиця Тараса Шевченка, 24.</a>
+                  </p>
+                  <h3 class="h3 card-title">
+                    <a href="#">Гімназія імені Франца-Йосифа</a>
+                  </h3>
+                  <p class="card-text">
+                    <span class="more-text"> Гімназію імені Франца-Йосифа в Дрогобичі заснували в середині 19 століття.
+                      Зараз там навчаються студенти факультету української та іноземної філології Дрогобицького
+                      університету. Іван Франко навчався у цій гімназії з 1867 по 1875 роки. Враження від учителів,
+                      таких як Іван Верхратський та Юлій Турчинський, стали основою для його літературного розвитку, що
+                      він описав у творах "Спомини — із моїх гімназійних часів" та "Гірчичне зерно".</span>
+                    <a href="#" class="toggle-text" onclick="toggleText(event)">Читати далі</a>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img src="./assets/images/Костел Святого Бартоломея.jpg" alt="Костел Святого Варфоломея"
+                    loading="lazy">
+                </figure>
+                <div class="card-content">
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                  <p class="card-subtitle">
+                    <a href="#">Дрогобич-вулиця Данила Галицького, 12.</a>
+                  </p>
+                  <h3 class="h3 card-title">
+                    <a href="#">Костел Святого Варфоломея</a>
+                  </h3>
+                  <p class="card-text">
+                    <span class="more-text"> Костел Святого Варфоломея в Дрогобичі — готична споруда, побудована після
+                      наказу короля Ягайла в 1392 році. У 1511 році храм освятив львівський архієпископ Бернард Вільчек.
+                      Після Другої світової війни костел використовували як склад, але у грудні 1989 року він знову
+                      відкрився для вірян. Сьогодні костел є важливою частиною туристичного маршруту і активно
+                      використовується для служби.</span>
+                    <a href="#" class="toggle-text" onclick="toggleText(event)">Читати далі</a>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img src="./assets/images/Церква Святого Юра.jpg" alt="Церква Святого Юра" loading="lazy">
+                </figure>
+                <div class="card-content">
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                  <p class="card-subtitle">
+                    <a href="#">Дрогобич-вулиця Солоний Ставок, 25.</a>
+                  </p>
+                  <h3 class="h3 card-title">
+                    <a href="#">Церква Святого Юра</a>
+                  </h3>
+                  <p class="card-text">
+                    <span class="more-text"> Церква Святого Юра — частина Світової спадщини ЮНЕСКО та музею
+                      "Дрогобиччина". Храм побудований без використання цвяхів, частини з'єднували дерев'яними кілками.
+                      У 1657–1678 роках майстер Григорій Тесля надав церкві її нинішній вигляд. В середині є унікальні
+                      розписи та іконостас 17 століття, авторства Стефана Медицького. У 2022 році церкву оцифрували, що
+                      дозволяє проводити віртуальні екскурсії.</span>
+                    <a href="#" class="toggle-text" onclick="toggleText(event)">Читати далі</a>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img src="./assets/images/Солевиварювальний завод.jpg" alt="Солевиварювальний завод" loading="lazy">
+                </figure>
+                <div class="card-content">
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                  <p class="card-subtitle">
+                    <a href="#">Дрогобич-вулиця Солоний Ставок, 27.</a>
+                  </p>
+                  <h3 class="h3 card-title">
+                    <a href="#">Солевиварюва
+                      льний завод</a>
+                  </h3>
+                  <p class="card-text">
+                    <span class="more-text"> Дрогобицький солевиварювальний завод — єдине підприємство в Європі, де сіль
+                      виготовляють за давнім методом виварювання з природної ропи. Спочатку розсіл видобувають з шахти,
+                      очищають, випарюють на дровах і подрібнюють. Перша згадка про Дрогобицьку сіль датується 1390
+                      роком. Завод постачав сіль до різних регіонів України. Сьогодні він виготовляє близько 700 кг солі
+                      щодня.</span>
+                    <a href="#" class="toggle-text" onclick="toggleText(event)">Читати далі</a>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img src="./assets/images/Тюрма на Стрийській.jpg" alt="Тюрма на Стрийській" loading="lazy">
+                </figure>
+                <div class="card-content">
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                  <p class="card-subtitle">
+                    <a href="#">Дрогобич-вулиця Стрийська, 3.</a>
+                  </p>
+                  <h3 class="h3 card-title">
+                    <a href="#">Тюрма на Стрийській</a>
+                  </h3>
+                  <p class="card-text">
+                    <span class="more-text"> Будівля, збудована в 1903 році, з 1939 по 1941 рік була обласним
+                      управлінням НКВС. Тут було закатовано понад 1200 осіб. Меморіал «Тюрма на Стрийській» відкрили в
+                      2012 році, а у 2018-2019 роках виявлено останки ще 78 жертв. Нині це частина Дрогобицького
+                      університету.</span>
+                    <a href="#" class="toggle-text" onclick="toggleText(event)">Читати далі</a>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img src="./assets/images/Хоральна_синагога_у_місті_Дрогобич_15.jpg" alt=" Хоральна синагога"
+                    loading="lazy">
+                </figure>
+                <div class="card-content">
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                  <p class="card-subtitle">
+                    <a href="#">Дрогобич-вулиця Пилипа Орлика.</a>
+                  </p>
+                  <h3 class="h3 card-title">
+                    <a href="#">
+                      Хоральна синагога</a>
+                  </h3>
+                  <p class="card-text">
+                    <span class="more-text"> Дрогобицька хоральна синагога в Дрогобичі є пам’ятником архітектури –
+                      однією серед восьми з двадцяти, а за іншими свідченнями – двадцяти трьох синагог Дрогобича, що
+                      залишилися у нас після Другої Світової війни.</span>
+                    <a href="#" class="toggle-text" onclick="toggleText(event)">Читати далі</a>
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- 
+        - #PACKAGE
+      -->
+      <section class="package" id="package">
+        <div class="container">
+          <p class="section-subtitle">Цікаві місця Дрогобича</p>
+          <h2 class="h2 section-title">Музеї міста</h2>
+          <ul class="package-list">
+            <li>
+              <div class="package-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/Церква_Чесного_Хреста.jpg" alt="Церква Воздвиження Чесного Хреста"
+                    loading="lazy">
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Церква Воздвиження Чесного Хреста</h3>
+                  <p class="card-text">
+                    <b> Адреса:</b> вул. Зварицька, 7; <br>
+                    <a href="https://www.google.com/maps/search/Церква+Воздвиження+Чесного+Хреста,+вул.+Зварицька,+7,+Дрогобич"
+                      target="_blank">
+                      Переглянути на карті
+                    </a>
+                    <a href="https://drymba.com/uk/1031954-tserkva-vozdvyzhennya-chesnoho-khresta-drohobych-lvivska"
+                      target="_blank">
+                      Переглянути детальніше про церкву
+                    </a>
+                  </p>
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+                        <p class="text">Доступ туристів: платний</p>
+                      </div>
+                    </li>
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <p class="text">1613 року</p>
+                      </div>
+                    </li>
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+                        <p class="text">Дрогобич</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-price">
+                  <div class="wrapper">
+                    <p class="reviews">(114 відгуки)</p>
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </div>
+                  </p>
+                  <p> Храм та дзвіниця. Пам'ятка української дерев'яної архітектури XV–XVII ст. національного значення.
+                    Тут збережені унікальні за іконографією розписи у святилищі храму. </p><br>
+                  <p>Працюємо:У Відділі дерев’яної архітектури (церкви Святого Юра та Воздвиження Чесного Хреста) –
+                    середа</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="package-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/Галерея сакрального мистецтва.jpg" alt="Галерея сакрального мистецтва"
+                    loading="lazy">
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Галерея сакрального мистецтва</h3>
+                  <p class="card-text">
+                    <b>Адреса:</b> вулиця Січових Стрільців, 18, Дрогобич, Львівська область, 82100;
+                    <a href="https://www.google.com/maps/search/вулиця+Січових+Стрільців,+18,+Дрогобич" target="_blank">
+                      Переглянути на карті
+                    </a>
+                    <a href="https://www.karpaty.info/ua/uk/lv/dr/drogobych/museums/galereya/" target="_blank">
+                      Детальніше про галерею
+                    </a>
+                  <p>Вхід: дорослі - 50 грн, студенти - 30 грн, школярі - 20 грн; екскурсія - 100 грн</p>
+                  </p>
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+                        <p class="text">Працює: щодня з 10:00 до 17:00</p>
+                      </div>
+                    </li>
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <p class="text"></p>
+                      </div>
+                    </li>
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+                        <p class="text">Дрогобич</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-price">
+                  <div class="wrapper">
+                    <p class="reviews">(53 відгуки)</p>
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </div>
+                  <p>
+                    Галерея сакрального мистецтва в Дрогобичі відкрита в 1996 році у будинку, який було збудовано на
+                    початку ХХ століття віцебургомістром Якубом Файєрштейном.
+                    Фасад невеликої будівлі в стилі сецесії повністю зберігся.
+                    Особливо цінні експонати – старовинні бойківські ікони XVI-XX століть.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="package-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/Музей Дрогобиччина.jpg" alt="Музей Дрогобиччина" loading="lazy">
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Музей "Дрогобиччина"</h3>
+                  <p class="card-text">
+                    <b>Адреса:</b>вулиця Тараса Шевченка, 38, Дрогобич, Львівська область, 82100;
+                    <a href="https://www.google.com/maps/search/вул.+Тараса+Шевченка,+38,+Дрогобич" target="_blank">
+                      Переглянути на карті
+                    </a>
+                    <a href="https://www.karpaty.info/ua/uk/lv/dr/drogobych/museums/palats/" target="_blank">
+                      Детальна інформація
+                    </a>
+                  <p>Вартість вхідних квитків:
+                    Для дорослих — 50 грн.
+                    Для студентів — 30 грн.
+                    Для дітей — 20 грн.
+                    Вартість екскурсії:
+                    100-200 грн.</p>
+                  </p>
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+                        <p class="text">Працює: 10:00-17:00.</p>
+                      </div>
+                    </li>
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+                        <p class="text">Номер телефону: +38 (03244) 2-20-35</p>
+                      </div>
+                    </li>
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+                        <p class="text">Дрогобич</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-price">
+                  <div class="wrapper">
+                    <p class="reviews">(292 відгуки)</p>
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </div>
+                  <p>У 2005 р. музей "Дрогобиччина" отримав будівлю початку ХХ ст., відому як "Вілла Б'янки", де
+                    облаштовано Палац мистецтв. Тут проходять художні виставки та діють експозиції:
+                    "Бойківська хата" – предмети побуту.
+                    "Дрогобицька вишивка" – особливі техніки та авторські роботи.
+                    "Бойківська писанка" – давні та сучасні писанки, зокрема вишиті.
+                    Український живопис ХХ ст.
+                    У Палаці мистецтв представлені твори Дрогобицької асоціації (ДАХ). З 2001 р. музейна колекція
+                    поповнилась настінними малюнками Бруно Шульца, про якого розповідає окрема експозиція.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="package-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/Відділ природи та історії.jpg" alt="Музей відділ природи" loading="lazy">
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Музей "Дрогобиччина". Відділ природи.</h3>
+                  <p class="card-text">
+                    <b>Адреса:</b> вул. Січових Стрільців, 18;
+                    <a href="https://www.google.com/maps/search/вул.+Січових+Стрільців,+18,+Дрогобич" target="_blank">
+                      Переглянути на карті
+                    </a>
+                  <p><b>Вартість вхідних квитків:</b>
+                    Для дорослих — 50 грн.
+                    Для дітей — 30 грн.
+                    <b> Вартість екскурсії:</b>
+                    За домовленістю.
+                  </p>
+                  </p>
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+                        <p class="text">Працює: 10:00-18:00, понеділок — вихідний.</p>
+                      </div>
+                    </li>
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <p class="text">Номер телефону: +38 (03244) 2-17-17</p>
+                      </div>
+                    </li>
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+                        <p class="text">Дрогобич</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-price">
+                  <div class="wrapper">
+                    <p class="reviews">(292 відгуки)</p>
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </div>
+                  <p>Історична споруда кінця XIX ст.–
+                    господарські приміщення колишньої Повітової ради. Тут експонується природнича колекція музею.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="package-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/Музей Дрогобиччина Відділ історії..jpg"
+                    alt="Музей Дрогобиччина Відділ історії." loading="lazy">
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Музей "Дрогобиччина". Відділ історії.</h3>
+                  <p class="card-text">
+                    <b>Адреса:</b>вулиця Івана Франка, 28, Дрогобич, Львівська область, 82100;
+                    <a href="https://www.google.com/maps/search/вул.+Івана+Франка,+28,+Дрогобич" target="_blank">
+                      Переглянути на карті
+                    </a>
+                    <a href="https://www.karpaty.info/ua/uk/lv/dr/drogobych/museums/istoriya/" target="_blank">
+                      Детальна інформація
+                    </a>
+                  <p><b>Вартість вхідних квитків:</b>
+                    Для дорослих — 50 грн.
+                    Для дітей — 30 грн.<br>
+                    <b> Вартість екскурсії:</b>
+                    За домовленістю.
+                  </p>
+                  </p>
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+                        <p class="text">Працює: 10:00-18:00, понеділок — вихідний.</p>
+                      </div>
+                    </li>
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+                        <p class="text">Номер телефону: +38 (03244) 2-17-17</p>
+                      </div>
+                    </li>
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+                        <p class="text">Дрогобич</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-price">
+                  <div class="wrapper">
+                    <p class="reviews">(65 відгуки)</p>
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </div>
+                  <p>Експозиція висвітлює історію Дрогобича: археологічні знахідки, розвиток цехового ремесла, соляної
+                    та нафтовидобувної промисловості, а також реліквії, пов’язані з І. Франком, С. Ковалівим, У.
+                    Кравченко, Ю. Котермаком.
+                    <b> Окремі виставки:</b>
+                    «Воїни гідності і свободи» – фотодокументи та артефакти Революції Гідності.
+                    «Побут і ремесла Бойківщини».
+                    «Тюрма на Стрийській» – історико-меморіальний комплекс жертв комуністичного терору.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="package-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/Шпихлір.webp" alt="Шпихлір" loading="lazy">
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Шпихлір</h3>
+                  <p class="card-text">
+                    <b>Адреса:</b> вул. Грушевського, Дрогобич, Львівська область, 82100;
+                    <a href="https://www.google.com/maps/search/вул.+Грушевського,+Дрогобич,+Львівська+область,+82100"
+                      target="_blank">
+                      Переглянути на карті
+                    </a>
+                    <a href="https://karpaty.rocks/shpihlir-drogobich" target="_blank">
+                      Детальна інформація
+                    </a>
+                  <p>Неподалік від центру Дрогобичу знаходиться одна з найстаріших будівель — дрогобицький шпихлір
+                    (житниця). Ця будівля була зведена за наказом цісаря Австро-Угорської імперії у 1778 р.
+                    Раніше ця будівля входила до складу комплексу споруд, що належали міському старості.</p>
+                  </p>
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+                        <p class="text">Дрогобич</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-price">
+                  <div class="wrapper">
+                    <p class="reviews">(6 відгуки)</p>
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </div>
+                  <p><b>Цікаві факти:</b>
+                    Шпихліри зводили для зберігання запасів зерна, що могли знадобиться під час війни чи неврожаю.
+                    Довжина шпихліру складає 30 м.
+                    Старовинну комору — унікальна господарська будівля, що зберіглась до наших часів у первісному
+                    вигляді.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="package-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/Тюрма на Стрийській_1.jpg" alt="Дрогобицький музей «Тюрма на Стрийській»"
+                    loading="lazy">
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Дрогобицький музей «Тюрма на Стрийській»</h3>
+                  <p class="card-text">
+                    <b>Адреса:</b>вулиця Стрийська, 1, Дрогобич, Львівська область, 82100;
+                    <a href="https://www.google.com/maps/search/вул.+Стрийська,+1,+Дрогобич,+Львівська+область,+82100"
+                      target="_blank">
+                      Переглянути на карті
+                    </a>
+                    <a href="https://travels.in.ua/uk-UA/object/3023/muzey-tyurma-na-stryyskiy-povitovyy-sud"
+                      target="_blank">
+                      Детальна інформація
+                    </a>
+                  <p><b>Години роботи:</b>
+                    за попереднім замовленням</p>
+                  </p>
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+                        <p class="text">Працює: 09:00-18:00.</p>
+                      </div>
+                    </li>
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <p class="text">Номер телефону: +380 98 449 0099</p>
+                      </div>
+                    </li>
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+                        <p class="text">Дрогобич</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-price">
+                  <div class="wrapper">
+                    <p class="reviews">(8 відгуки)</p>
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </div>
+                  <p>Історико-меморіальний комплекс "Тюрма на Стрийській" відкрито 2013 року в колишній катівні НКВС у
+                    дворі Повітового суду Дрогобича.
+                    У 1939-1941 та 1944-1959 роках тут діяло управління НКВС із внутрішньою в’язницею, де закатовано
+                    щонайменше 1200 осіб. Будівля суду, зведена на початку ХХ ст., була символом тоталітаризму,
+                    використовувалася польською, радянською та німецькою владою.
+                    Нині тут корпус Інституту фізики, математики, економіки та інноваційних технологій ДДПУ.
+                    Меморіал та музей «Тюрма на Стрийській» створено за проєктом архітектора Максима Чирки. Експозиція
+                    висвітлює сталінський терор, репресії НКВС, окупацію, містить фотомартиролог жертв, особисті речі
+                    закатованих та знаряддя катувань.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="package-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/Кімната музей Бруно Шульца.JPG" alt="Кімната-музей Бруно Шульца"
+                    loading="lazy">
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Кімната-музей Бруно Шульца</h3>
+                  <p class="card-text">
+                    <b>Адреса:</b>вулиця Івана Франка, 24 (головний корпус Дрогобицького державного педагогічного
+                    університету у вчительському кабінеті колишньої гімназії);
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <p class="text">Номер телефону: +38 (03244) 5-11-22</p>
+                      </div>
+                    </li>
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+                        <p class="text">Дрогобич</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-price">
+                  <div class="wrapper">
+                    <p class="reviews">(12 відгуки)</p>
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </div>
+                  <p>Музей був створений за ініціативи першого керівника Полоністичного науково-інформаційного центру
+                    Ігоря Менька.
+                    Серед експонатів можна побачити першовидання "Цинамонових крамниць" Бруно Шульца, праці Єжи
+                    Фіцовського, погруддя Бруно Шульца, автором якого є Пйотр Фліт, а також видання присвячені творчості
+                    Шульца, авторами яких є професори Владислава Панаса та Єжи Яжембського.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- 
+        - #GALLERY
+      -->
+      <section class="gallery" id="gallery">
+        <div class="container">
+          <p class="section-subtitle">Додаткові фото міста</p>
+          <h2 class="h2 section-title">Дрогобич</h2>
+          <p class="section-text">
+            Ласкаво просимо до Дрогобича – мальовничого куточка Західної України, де кожна вулиця дихає історією, а
+            кожен будинок приховує легенду. Це місто солі, величної архітектури, ароматної кави та привітних людей.
+          </p>
+          <ul class="gallery-list">
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/Дрогобич_1.jpg" alt="Фото Дрогобича">
+              </figure>
+            </li>
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/Дрогобич_2.jpg" alt="Фото Дрогобича">
+              </figure>
+            </li>
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/Дрогобич_3.jpg" alt="Фото Дрогобича">
+              </figure>
+            </li>
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/Дрогобич_4.webp" alt="Фото Дрогобича">
+              </figure>
+            </li>
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/Дрогобич_5.jpg" alt="Фото Дрогобича">
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- 
+        - #CTA
+      -->
+      <section class="cta" id="contact">
+        <div class="container">
+          <div class="cta-content">
+            <p class="section-subtitle">Заклик до дії</p>
+            <h2 class="h2 section-title">Готовий до незабутньої подорожі. Пам'ятай про нас!</h2>
+            <p class="section-text">
+              "Поринь у атмосферу одного з найстаріших міст України. Дізнайся більше про його унікальні пам'ятки,
+              захоплюючі історії та місця, що надихають."
+            </p>
+          </div>
+          <button class="btn btn-secondary">Зв'язатися з нами </button>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" alt="Tourly logo">
+          </a>
+          <p class="footer-text">
+            Дізнайся, чому це місто стало джерелом натхнення для художників, письменників та мандрівників по всьому
+            світу.
+          </p>
+        </div>
+        <div class="footer-contact">
+          <h4 class="contact-title">Зв'язатися з нами </h4>
+          <p class="contact-text">
+            Чекаємо вашого дзвінка !!
+          </p>
+          <ul>
+            <li class="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+              <a href="tel:+01123456790" class="contact-link">(0324) 410-160</a>
+            </li>
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+              <a href="mailto:info.tourly.com" class="contact-link">dmr@drohobych-rada.gov.ua</a>
+            </li>
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+              <address> 82100, Львівська обл., м. Дрогобич, пл. Ринок,1 / каб 314</address>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-form">
+          <p class="form-text">
+            <a href="https://list.in.ua/111220/Туристично-інформаційний-центр-міста-Дрогобича-Дрогобич" target="_blank"
+              class="btn btn-info w-100">Більше про екскурсії</a>
+
+          </p>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+          &copy; 2025 <a href="">codewithUkraine</a>. Всі права захищені
+        </p>
+        <ul class="footer-bottom-list">
+          <li>
+            <a href="#" class="footer-bottom-link">Політика конфіденційності</a>
+          </li>
+          <li>
+            <a href="#" class="footer-bottom-link">Умови використання</a>
+          </li>
+          <li>
+            <a href="#" class="footer-bottom-link">//</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- 
+    - #GO TO TOP
+  -->
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

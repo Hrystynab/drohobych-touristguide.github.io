@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пам'ятники міста</title>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="top">
+    <!-- 
+      - #HEADER
+    -->
+    <header class="header" data-header>
+        <div class="overlay" data-overlay></div>
+        <div class="header-top">
+            <div class="container">
+                <a href="tel:(0324) 410-160" class="helpline-box">
+                    <div class="icon-box">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </div>
+                    <div class="wrapper">
+                        <p class="helpline-title">Для додаткової інформації :</p>
+                        <p class="helpline-number">(0324) 410-160</p>
+                    </div>
+                </a>
+                <a href="#" class="logo">
+                    <img src="./assets/images/logo.svg" alt="Tourly logo">
+                </a>
+                <div class="header-btn-group">
+                    <form class="search-form" id="searchForm">
+                        <input type="text" id="searchQuery" placeholder="Пошук..." required>
+                        <button class="search-btn" type="submit" aria-label="Search">
+                            <ion-icon name="search"></ion-icon>
+                        </button>
+                    </form>
+                    <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <ul class="social-list">
+                    <li>
+                        <a href="https://www.facebook.com/DrogRada/?locale=uk_UA" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCbwirQ4_FtpkH7-lPqe85YA" class="social-link">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+                <nav class="navbar" data-navbar>
+                    <div class="navbar-top">
+                        <a href="#" class="logo">
+                            <img src="./assets/images/logo-blue.svg" alt="Tourly logo">
+                        </a>
+                        <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+                    </div>
+                    <ul class="navbar-list">
+                        <li>
+                            <a href="index.html" class="navbar-link" data-nav-link>Головна</a>
+                        </li>
+                        <li>
+                            <a href="monuments.html" class="navbar-link" data-nav-link>Пам'ятники</a>
+                        </li>
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">Освітні установи</a>
+                                <ul class="submenu">
+                                    <li><a href="Kindergartens.html">Дитячі садки</a></li>
+                                    <li><a href="schools.html">Школи</a></li>
+                                    <li><a href="Colleges_schools.html">Коледжі, училища</a></li>
+                                    <li><a href="institutes.html">Університети</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <li>
+                            <a href="Shopping_enters.html" class="navbar-link" data-nav-link>Торгові центри</a>
+                        </li>
+                        <li>
+                            <a href="toeat.html" class="navbar-link" data-nav-link>Де поїсти?</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="vhid.html">
+                    <button class="btn btn-primary">Увійти</button>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article>
+            <!-- 
+            - #POPULAR
+          -->
+            <br>
+            <br>
+            <br>
+            <section class="popular" id="destination">
+                <div class="container">
+                    <h2 class="h2 section-title">Мандрівка мастом кразь його пам'ятники</h2>
+                    <p class="section-text">
+                        Пам’ятники міста розповідають про його історію, видатних людей та події, що формували його
+                        обличчя. Кожна скульптура чи меморіал — це частинка минулого, яку можна побачити та відчути.
+                        Прогулюючись вулицями,
+                        ви зможете дізнатися більше про культурну спадщину та відчути атмосферу епох, які минули.
+                    </p>
+                    <ul class="popular-list">
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-img">
+                                    <img src="./assets/images/Пам'ятник воїнам-афганцям `Смуток'.jpg"
+                                        alt="Пам'ятник воїнам-афганцям `Смуток'" loading="lazy">
+                                </figure>
+                                <div class="card-content">
+                                    <span class="more-text"><b>Пам'ятник воїнам-афганцям `Смуток'</b><br>
+                                        <b> Адреса:</b>вулиця Тараса Шевченка, 21.</span>
+                                    <a href="#" class="toggle-text" onclick="toggleText(event)">Про пам'ятник</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-img">
+                                    <img src="./assets/images/Пам'ятник Воїнові АТО, що повернувся.JPG"
+                                        alt="Пам'ятник Воїнові АТО, що повернувся" loading="lazy">
+                                </figure>
+                                <div class="card-content">
+                                    <span class="more-text"><b>Пам'ятник Воїнові АТО, що повернувся.</b><br>
+                                        <b> Адреса:</b>вулиця площа Ринок</span>
+                                    <a href="#" class="toggle-text" onclick="toggleText(event)">Про пам'ятник</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-img">
+                                    <img src="./assets/images/Пам'ятник Тарасові Шевченку.jpg"
+                                        alt="Пам'ятник Тарасові Шевченку" loading="lazy">
+                                </figure>
+                                <div class="card-content">
+                                    <span class="more-text"><b>Пам'ятник Тарасові Шевченку</b><br>
+                                        <b> Адреса:</b>вулиця Лесі Українки, 16.</span>
+                                    <a href="#" class="toggle-text" onclick="toggleText(event)">Про пам'ятник</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-img">
+                                    <img src="./assets/images/Пам'ятник Юрію Дрогобичу.JPG"
+                                        alt="Пам'ятник Юрію Дрогобичу" loading="lazy">
+                                </figure>
+                                <div class="card-content">
+                                    <span class="more-text"><b>Пам'ятник Юрію Дрогобичу</b><br>
+                                        <b> Адреса:</b>вулиця Замкова Гора, 2. </span>
+                                    <a href="#" class="toggle-text" onclick="toggleText(event)">Про пам'ятник</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-img">
+                                    <img src="./assets/images/Пам'ятник В'ячеславу Чорноволу.jpg"
+                                        alt="Пам'ятник В'ячеславу Чорноволу" loading="lazy">
+                                </figure>
+                                <div class="card-content">
+                                    <span class="more-text"><b>Пам'ятник В'ячеславу Чорноволу</b><br>
+                                        <b> Адреса:</b> вулиця Тараса Шевченка, 27.</span>
+                                    <a href="#" class="toggle-text" onclick="toggleText(event)">Про пам'ятник</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-img">
+                                    <img src="./assets/images/Пам'ятник Василю Стефанику.jpg"
+                                        alt="Пам'ятник Василю Стефанику" loading="lazy">
+                                </figure>
+                                <div class="card-content">
+                                    <span class="more-text"><b>Пам'ятник Василю Стефанику</b><br>
+                                        <b> Адреса:</b> вулиця Гончарська, 11.
+                                    </span>
+                                    <a href="#" class="toggle-text" onclick="toggleText(event)">Про пам'ятник</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-img">
+                                    <img src="./assets/images/Пам'ятний знак на честь 2000-ліття християнства.jpg"
+                                        alt="Пам'ятний знак на честь 2000-ліття християнства" loading="lazy">
+                                </figure>
+                                <div class="card-content">
+                                    <span class="more-text"><b> Пам'ятний знак на честь 2000-ліття християнства.</b><br>
+                                        <b> Адреса:</b> вулиця Івана Франка, 31.
+                                    </span>
+                                    <a href="#" class="toggle-text" onclick="toggleText(event)">Про пам'ятник</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-img">
+                                    <img src="./assets/images/Пам'ятник Григорію Геврику.jpg"
+                                        alt="Пам'ятник Григорію Геврику" loading="lazy">
+                                </figure>
+                                <div class="card-content">
+                                    <span class="more-text"> <b>Пам'ятник Григорію Геврику</b><br>
+                                        <b> Адреса:</b> вулиця Горішня Брама.
+                                    </span>
+                                    <a href="#" class="toggle-text" onclick="toggleText(event)">Про пам'ятник</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-img">
+                                    <img src="./assets/images/Пам'ятник Адаму Міцкевичу.JPG"
+                                        alt="Пам'ятник Адаму Міцкевичу" loading="lazy">
+                                </figure>
+                                <div class="card-content">
+                                    <span class="more-text"><b> Пам'ятник Адаму Міцкевичу.</b><br>
+                                        <b> Адреса:</b>вулиця Тараса Шевченка, 22.
+                                    </span>
+                                    <a href="#" class="toggle-text" onclick="toggleText(event)">Про пам'ятник</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-img">
+                                    <img src="./assets/images/Івн Павло 2.jpg" alt="Папі Римському Івану Павлу ІІ"
+                                        loading="lazy">
+                                </figure>
+                                <div class="card-content">
+                                    <span class="more-text"><b>Папі Римському Івану Павлу ІІ</b><br>
+                                        <b> Адреса:</b> вулиця Данила Галицького, 8.
+                                    </span>
+                                    <a href="#" class="toggle-text" onclick="toggleText(event)">Про пам'ятник</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-img">
+                                    <img src="./assets/images/Іван Франко.jpg" alt="Пам'ятник Івану Франку"
+                                        loading="lazy">
+                                </figure>
+                                <div class="card-content">
+                                    <span class="more-text"><b>Пам'ятник Івану Франку</b><br>
+                                        <b> Адреса:</b> вулиця Івана Франка, 18.
+                                    </span>
+                                    <a href="#" class="toggle-text" onclick="toggleText(event)">Про пам'ятник</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-img">
+                                    <img src="./assets/images/Пам'ятник_Степану_Бандері_в_Дрогобичі.jpg"
+                                        alt="Пам'ятник Степану Бандері" loading="lazy">
+                                </figure>
+                                <div class="card-content">
+                                    <span class="more-text"><b>Пам'ятник Степану Бандері</b><br>
+                                        <b> Адреса:</b> вулиця Тараса Шевченка, 6.
+                                    </span>
+                                    <a href="#" class="toggle-text" onclick="toggleText(event)">Про пам'ятник</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-img">
+                                    <img src="./assets/images/Пам'ятна табличка Бруно Шульца.jpg"
+                                        alt="Пам'ятна табличка Бруно Шульца" loading="lazy">
+                                </figure>
+                                <div class="card-content">
+                                    <span class="more-text"><b>Пам'ятна табличка Бруно Шульца</b><br>
+                                        <b> Адреса:</b> вулиця Тараса Шевченка, 6.
+                                    </span>
+                                    <a href="#" class="toggle-text" onclick="toggleText(event)">Про пам'ятник</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-img">
+                                    <img src="./assets/images/Пам'ятник Героям Небесної Сотні.jpg"
+                                        alt="Памятник Героям небесної сотні" loading="lazy">
+                                </figure>
+                                <div class="card-content">
+                                    <span class="more-text"><b>Памятник "Героям небесної сотні"</b><br>
+                                        <b> Адреса:</b> вулиця Пилипа Орлика.
+                                    </span>
+                                    <a href="#" class="toggle-text" onclick="toggleText(event)">Про пам'ятник</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+    </main>
+    <!-- 
+        - #FOOTER
+      -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="./assets/images/logo.svg" alt="Tourly logo">
+                    </a>
+                    <p class="footer-text">
+                        Дізнайся, чому це місто стало джерелом натхнення для художників, письменників та мандрівників по
+                        всьому світу.
+                    </p>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="contact-title">Зв'язатися з нами </h4>
+                    <p class="contact-text">
+                        Чекаємо вашого дзвінка !!
+                    </p>
+                    <ul>
+                        <li class="contact-item">
+                            <ion-icon name="call-outline"></ion-icon>
+                            <a href="tel:+01123456790" class="contact-link">(0324) 410-160</a>
+                        </li>
+                        <li class="contact-item">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <a href="mailto:info.tourly.com" class="contact-link">dmr@drohobych-rada.gov.ua</a>
+                        </li>
+                        <li class="contact-item">
+                            <ion-icon name="location-outline"></ion-icon>
+                            <address> 82100, Львівська обл., м. Дрогобич, пл. Ринок,1 / каб 314</address>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-form">
+                    <p class="form-text">
+                        <a href="https://list.in.ua/111220/Туристично-інформаційний-центр-міста-Дрогобича-Дрогобич"
+                            target="_blank" class="btn btn-info w-100">Більше про екскурсії</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">
+                    &copy; 2025 <a href="">codewithUkraine</a>. Всі права захищені
+                </p>
+                <ul class="footer-bottom-list">
+                    <li>
+                        <a href="#" class="footer-bottom-link">Політика конфіденційності</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-bottom-link">Умови використання</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-bottom-link">//</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- 
+        - #GO TO TOP
+      -->
+    <a href="#top" class="go-top" data-go-top>
+        <ion-icon name="chevron-up-outline"></ion-icon>
+    </a>
+    <!-- 
+        - custom js link
+      -->
+    <script src="./assets/js/scripts.js"></script>
+    <!-- 
+        - ionicon link
+      -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
